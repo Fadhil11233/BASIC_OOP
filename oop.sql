@@ -18,17 +18,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `hobby` varchar(255) DEFAULT NULL,
-  `height` int DEFAULT NULL,
-  `weight` int DEFAULT NULL,
-  `gender` enum('L','P') DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `user` (`id`, `name`, `email`, `hobby`, `height`, `weight`, `gender`) VALUES
 (1, 'Aghits Nidallah', 'yourlovelydev@gmail.com', 'Programming', 160, 70, 'L'),
